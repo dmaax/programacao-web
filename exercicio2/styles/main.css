@@ -3,3 +3,9 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
 }
+h1 {
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fcfcfc;
+    text-shadow: #49a6df 2px 2px;
+}
