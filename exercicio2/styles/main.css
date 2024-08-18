@@ -17,3 +17,9 @@ img {
     display: block;
     margin: 0 auto;
 }
+a {
+    color: #49a6df;
+}
+a:hover {
+    color: #71d0dd;
+}
