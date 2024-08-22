@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a2e;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #16213e;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .pacifico-regular {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-container i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #0f3460;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px 10px 10px 30px; /* Espaço para o ícone */
+            margin-bottom: 20px;
+            border: 1px solid #0f3460;
+            border-radius: 4px;
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0f3460;
+            color: #f0f0f0;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d2a50;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="pacifico-regular">Login</h1>
+        <form action="login.html" method="post">
+            <div class="input-container">
+                <i class="fa-regular fa-user"></i> Usuario
+                <input type="text" id="usuario" name="usuario" placeholder="ex. dmaax" required>
+            </div>
+            <div class="input-container">
+                <i class="fa-solid fa-lock"></i> Senha
+                <input type="password" id="senha" name="senha" placeholder="ex. 123456" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <a href="./cadastro.html">Não tem uma conta?</a>
+    </div>
+</body>
+</html>
